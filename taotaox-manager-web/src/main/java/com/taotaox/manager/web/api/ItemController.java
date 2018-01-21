@@ -2,6 +2,7 @@ package com.taotaox.manager.web.api;
 
 import com.taotaox.common.bo.EUDataGridResult;
 import com.taotaox.common.bo.JsonEntity;
+import com.taotaox.common.exception.BizException;
 import com.taotaox.common.utils.web.ResponseHelper;
 import com.taotaox.manager.entity.TbItem;
 import com.taotaox.manager.service.ItemService;
@@ -27,7 +28,7 @@ public class ItemController {
     @ApiOperation(value = "Get item by item id", notes = "", tags = "Item", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ApiImplicitParam(paramType = "path", name = "itemId", value = "item id", dataType = "long", example = "536563", required = true)
     @RequestMapping(value = "/item/{itemId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public JsonEntity<TbItem> getItemById(@PathVariable long itemId) {
+    public JsonEntity<TbItem> getItemById(@PathVariable long itemId) throws BizException  {
         TbItem item = itemService.getItemById(itemId);
         return ResponseHelper.of(item);
     }
@@ -38,8 +39,15 @@ public class ItemController {
             @ApiImplicitParam(paramType = "query", name = "rows", value = "how many need to get", dataType = "int", example = "20", required = true)
     })
     @RequestMapping(value = "/item/list", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public JsonEntity<EUDataGridResult> getItemList(@RequestParam(name = "page") Integer page, @RequestParam(name = "rows") Integer rows) {
+    public EUDataGridResult getItemList(@RequestParam(name = "page") Integer page, @RequestParam(name = "rows") Integer rows) throws BizException  {
         EUDataGridResult result = itemService.getItemList(page, rows);
+        return result;
+    }
+
+    @ApiOperation(value = "Create a new item", notes = "Will return true if create sucessfully", tags = "Item", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @RequestMapping(value = "/item/action/save", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public JsonEntity<Boolean> createItem(TbItem item, String desc, String itemParams) throws BizException {
+        Boolean result = itemService.createItem(item, desc, itemParams);
         return ResponseHelper.of(result);
     }
 }

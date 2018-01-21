@@ -1,28 +1,32 @@
 package com.taotaox.manager.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.Date;
 
+@ApiModel
 public class TbItem {
     private Long id;
-
+    @ApiModelProperty(name = "title", notes = "Title for goods", dataType = "string")
     private String title;
-
+    @ApiModelProperty(name = "sellPoint", notes = "", dataType = "string")
     private String sellPoint;
-
+    @ApiModelProperty(name = "price", notes = "", dataType = "long")
     private Long price;
-
+    @ApiModelProperty(name = "num", notes = "", dataType = "int")
     private Integer num;
-
+    @ApiModelProperty(name = "barcode", notes = "", dataType = "string")
     private String barcode;
-
+    @ApiModelProperty(name = "image", notes = "", dataType = "string")
     private String image;
 
     private Long cid;
-
+    @ApiModelProperty(name = "status", notes = "The status of goods. 1:normal, 2:down, 3:delete", dataType = "byte")
     private Byte status;
-
+    @ApiModelProperty(name = "created", notes = "", dataType = "date")
     private Date created;
-
+    @ApiModelProperty(name = "updated", notes = "", dataType = "date")
     private Date updated;
 
     public Long getId() {

@@ -1,16 +1,19 @@
 package com.taotaox.manager.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.util.Date;
 
+@ApiModel
 public class TbItemParamItem {
     private Long id;
-
     private Long itemId;
-
+    @ApiModelProperty(name = "created", dataType = "date")
     private Date created;
-
+    @ApiModelProperty(name = "updated", dataType = "date")
     private Date updated;
-
+    @ApiModelProperty(name = "paramData", dataType = "string")
     private String paramData;
 
     public Long getId() {
