@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Api("Taotaox Api")
 @Controller
 @RequestMapping("/public/api")
-public class ItemParamItemController {
+public class ItemParamItemApi {
 
     @Autowired
     private ItemParamItemService itemParamItemService;
