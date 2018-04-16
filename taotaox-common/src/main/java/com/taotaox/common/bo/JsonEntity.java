@@ -32,7 +32,8 @@ public class JsonEntity<T> implements Serializable {
         return status;
     }
 
-    public JsonEntity setStatus(int status) {
+    @SuppressWarnings("rawtypes")
+	public JsonEntity setStatus(int status) {
         this.status = status;
         return this;
     }
@@ -41,7 +42,8 @@ public class JsonEntity<T> implements Serializable {
         return message;
     }
 
-    public JsonEntity setMessage(String message) {
+    @SuppressWarnings("rawtypes")
+	public JsonEntity setMessage(String message) {
         this.message = message;
         return this;
     }
@@ -50,7 +52,8 @@ public class JsonEntity<T> implements Serializable {
         return requestId;
     }
 
-    public JsonEntity setRequestId(String requestId) {
+    @SuppressWarnings("rawtypes")
+	public JsonEntity setRequestId(String requestId) {
         this.requestId = requestId;
         return this;
     }
@@ -59,7 +62,8 @@ public class JsonEntity<T> implements Serializable {
         return data;
     }
 
-    public JsonEntity setData(T data) {
+    @SuppressWarnings("rawtypes")
+	public JsonEntity setData(T data) {
         this.data = data;
         return this;
     }

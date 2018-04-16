@@ -9,7 +9,8 @@ import java.util.Map;
  */
 public class ObjectUtils {
 
-    public static boolean isEmpty(Object object) {
+    @SuppressWarnings("rawtypes")
+	public static boolean isEmpty(Object object) {
         if (object == null) {
             return true;
         }

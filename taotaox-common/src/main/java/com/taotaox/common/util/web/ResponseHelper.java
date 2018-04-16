@@ -22,11 +22,13 @@ public class ResponseHelper {
         return createInstance(null);
     }
 
-    public static <T> JsonEntity<T> withMessage(String message) {
+    @SuppressWarnings("unchecked")
+	public static <T> JsonEntity<T> withMessage(String message) {
         return ofNothing().setMessage(message);
     }
 
-    public static <T> JsonEntity<T> withMessage(ErrorMsg errorMsg) {
+    @SuppressWarnings("unchecked")
+	public static <T> JsonEntity<T> withMessage(ErrorMsg errorMsg) {
         return withMessage(errorMsg.getMessage()).setStatus(errorMsg.getStatus());
     }
 }

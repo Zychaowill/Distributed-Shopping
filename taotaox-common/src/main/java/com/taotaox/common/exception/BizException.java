@@ -5,7 +5,9 @@ package com.taotaox.common.exception;
  */
 public class BizException extends RuntimeException {
 
-    public BizException() {
+	private static final long serialVersionUID = -922066731594183026L;
+
+	public BizException() {
     }
 
     public BizException(String message) {
