@@ -2,8 +2,9 @@ package com.taotaox.manager.service;
 
 import com.taotaox.common.exception.BizException;
 import com.taotaox.common.exception.ErrorMsg;
-import com.taotaox.common.utils.web.FtpUtil;
-import com.taotaox.common.utils.web.IdUtils;
+import com.taotaox.common.util.web.FtpUtils;
+import com.taotaox.common.util.web.IdUtils;
+
 import lombok.extern.slf4j.Slf4j;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Value;
@@ -40,7 +41,7 @@ public class PictureServiceImpl implements PictureService {
             newName += oldName.substring(oldName.lastIndexOf("."));
 
             String imagePath = new DateTime().toString("/yyyy/MM/dd");
-            boolean result = FtpUtil.uploadFile(FTP_ADDRESS, FTP_PORT, FTP_USERNAME, FTP_PASSWORD, FTP_BASE_PATH,
+            boolean result = FtpUtils.uploadFile(FTP_ADDRESS, FTP_PORT, FTP_USERNAME, FTP_PASSWORD, FTP_BASE_PATH,
                     imagePath, newName, uploadFile.getInputStream());
 
             if (!result) {

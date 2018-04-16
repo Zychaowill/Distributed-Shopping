@@ -1,4 +1,4 @@
-package com.taotaox.common.utils.web;
+package com.taotaox.common.util.web;
 
 import com.taotaox.common.bo.JsonEntity;
 import com.taotaox.common.exception.ErrorMsg;

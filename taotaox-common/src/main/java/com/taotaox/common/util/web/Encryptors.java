@@ -1,4 +1,4 @@
-package com.taotaox.common.utils.web;
+package com.taotaox.common.util.web;
 
 /**
  * Created by yachao on 18/1/20.

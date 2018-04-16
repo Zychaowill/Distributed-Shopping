@@ -1,4 +1,4 @@
-package com.taotaox.common.utils.web;
+package com.taotaox.common.util.web;
 
 import com.taotaox.common.exception.BizException;
 import org.apache.commons.net.ftp.FTP;
@@ -12,7 +12,7 @@ import java.util.Objects;
 /**
  * Created by yachao on 18/1/21.
  */
-public class FtpUtil {
+public class FtpUtils {
 
     public static boolean uploadFile(String host, int port, String username, String password, String basePath, String
             filePath, String filename, InputStream input) {
@@ -32,7 +32,7 @@ public class FtpUtil {
                 String[] dirs = filePath.split("/");
                 String tempPath = basePath;
                 for (String dir : dirs) {
-                    if (ObjectUtil.isEmpty(dir)) continue;
+                    if (ObjectUtils.isEmpty(dir)) continue;
                     tempPath += "/" + dir;
                     if (!ftp.changeWorkingDirectory(tempPath)) {
                         if (!ftp.makeDirectory(tempPath)) {

@@ -1,7 +1,5 @@
 package com.taotaox.common.bo;
 
-import com.taotaox.common.utils.excel.ExcelTool;
-import com.taotaox.common.utils.web.ObjectUtil;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +10,9 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import com.taotaox.common.util.excel.ExcelTool;
+import com.taotaox.common.util.web.ObjectUtils;
 
 /**
  * Created by yachao on 18/1/20.
@@ -30,7 +31,7 @@ public class ExcelEntity implements Serializable {
     private List<String> sheetNames = new ArrayList<>();
 
     public List<String> getSheetNames() {
-        if (ObjectUtil.isEmpty(sheetNames)) {
+        if (ObjectUtils.isEmpty(sheetNames)) {
             List<String> newSheetNames = sheetsWithData.entrySet().parallelStream().map(Map.Entry::getKey).collect(Collectors.toList());
             sheetNames.addAll(newSheetNames);
         }

@@ -2,7 +2,7 @@ package com.taotaox.manager.service;
 
 import com.taotaox.common.bo.EUTreeNode;
 import com.taotaox.common.exception.BizException;
-import com.taotaox.common.utils.web.ObjectUtil;
+import com.taotaox.common.util.web.ObjectUtils;
 import com.taotaox.manager.dao.TbItemCatMapper;
 import com.taotaox.manager.entity.TbItemCat;
 import com.taotaox.manager.entity.TbItemCatExample;
@@ -31,7 +31,7 @@ public class ItemCatServiceImpl implements ItemCatService {
         List<TbItemCat> list = itemCatMapper.selectByExample(example);
         List<EUTreeNode> resultList = new ArrayList<>();
 
-        if (!ObjectUtil.isEmpty(list)) {
+        if (!ObjectUtils.isEmpty(list)) {
             return list.parallelStream().map(category -> {
                 EUTreeNode node = new EUTreeNode();
                 node.setId(category.getId());

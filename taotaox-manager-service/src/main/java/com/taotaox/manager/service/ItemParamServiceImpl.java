@@ -3,7 +3,7 @@ package com.taotaox.manager.service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.taotaox.common.bo.EUDataGridResult;
-import com.taotaox.common.utils.web.ObjectUtil;
+import com.taotaox.common.util.web.ObjectUtils;
 import com.taotaox.manager.dao.TbItemCatMapper;
 import com.taotaox.manager.dao.TbItemParamMapper;
 import com.taotaox.manager.entity.TbItemCat;
@@ -34,7 +34,7 @@ public class ItemParamServiceImpl implements ItemParamService {
 
         TbItemParamExample example = new TbItemParamExample();
         List<TbItemParam> list = itemParamMapper.selectByExampleWithBLOBs(example);
-        if (!ObjectUtil.isEmpty(list)) {
+        if (!ObjectUtils.isEmpty(list)) {
             list = list.parallelStream().map(tbItemParam -> {
                 TbItemCat itemCat = itemCatMapper.selectByPrimaryKey(tbItemParam.getItemCatId());
                 tbItemParam.setItemCatName(itemCat.getName());
@@ -58,7 +58,7 @@ public class ItemParamServiceImpl implements ItemParamService {
 
         List<TbItemParam> list = itemParamMapper.selectByExampleWithBLOBs(example);
 
-        if (!ObjectUtil.isEmpty(list)) {
+        if (!ObjectUtils.isEmpty(list)) {
             return list.get(0);
         }
         return null;
@@ -76,7 +76,7 @@ public class ItemParamServiceImpl implements ItemParamService {
     @Override
     public boolean deleteItemParamByIds(String ids) {
         Boolean result = false;
-        if (!ObjectUtil.isEmpty(ids)) {
+        if (!ObjectUtils.isEmpty(ids)) {
             Arrays.stream(ids.split(",")).map(Long::parseLong).forEach(id -> {
                 itemParamMapper.deleteByPrimaryKey(id);
             });

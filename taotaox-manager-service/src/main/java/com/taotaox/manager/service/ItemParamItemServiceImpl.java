@@ -1,7 +1,7 @@
 package com.taotaox.manager.service;
 
-import com.taotaox.common.utils.web.JsonUtils;
-import com.taotaox.common.utils.web.ObjectUtil;
+import com.taotaox.common.util.web.JsonUtils;
+import com.taotaox.common.util.web.ObjectUtils;
 import com.taotaox.manager.dao.TbItemParamItemMapper;
 import com.taotaox.manager.entity.TbItemParamItem;
 import com.taotaox.manager.entity.TbItemParamItemExample;
@@ -27,7 +27,7 @@ public class ItemParamItemServiceImpl implements ItemParamItemService {
         criteria.andItemIdEqualTo(itemId);
 
         List<TbItemParamItem> list = itemParamItemMapper.selectByExampleWithBLOBs(example);
-        if (ObjectUtil.isEmpty(list)) {
+        if (ObjectUtils.isEmpty(list)) {
             return "";
         }
 

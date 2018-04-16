@@ -1,4 +1,4 @@
-package com.taotaox.common.utils.web;
+package com.taotaox.common.util.web;
 
 import java.lang.reflect.Array;
 import java.util.Collection;
@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * Created by yachao on 18/1/20.
  */
-public class ObjectUtil {
+public class ObjectUtils {
 
     public static boolean isEmpty(Object object) {
         if (object == null) {

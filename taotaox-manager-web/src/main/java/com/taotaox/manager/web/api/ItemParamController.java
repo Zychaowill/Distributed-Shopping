@@ -3,7 +3,7 @@ package com.taotaox.manager.web.api;
 import com.taotaox.common.bo.EUDataGridResult;
 import com.taotaox.common.bo.JsonEntity;
 import com.taotaox.common.exception.BizException;
-import com.taotaox.common.utils.web.ResponseHelper;
+import com.taotaox.common.util.web.ResponseHelper;
 import com.taotaox.manager.entity.TbItemParam;
 import com.taotaox.manager.service.ItemParamService;
 import io.swagger.annotations.Api;

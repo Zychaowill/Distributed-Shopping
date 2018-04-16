@@ -4,8 +4,8 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.taotaox.common.bo.EUDataGridResult;
 import com.taotaox.common.exception.BizException;
-import com.taotaox.common.utils.web.IdUtils;
-import com.taotaox.common.utils.web.ObjectUtil;
+import com.taotaox.common.util.web.IdUtils;
+import com.taotaox.common.util.web.ObjectUtils;
 import com.taotaox.manager.entity.TbItem;
 import com.taotaox.manager.entity.TbItemDesc;
 import com.taotaox.manager.entity.TbItemExample;
@@ -38,7 +38,7 @@ public class ItemServiceImpl implements ItemService {
         TbItemExample.Criteria criteria = example.createCriteria();
         criteria.andIdEqualTo(itemId);
         List<TbItem> list = itemMapper.selectByExample(example);
-        if (!ObjectUtil.isEmpty(list)) {
+        if (!ObjectUtils.isEmpty(list)) {
             TbItem item = list.get(0);
             return item;
         }
