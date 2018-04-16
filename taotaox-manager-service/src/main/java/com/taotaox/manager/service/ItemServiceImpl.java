@@ -15,6 +15,7 @@ import com.taotaox.manager.dao.TbItemParamItemMapper;
 import com.taotaox.manager.entity.TbItemParamItem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -61,6 +62,7 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
+    @Transactional
     public Boolean createItem(TbItem item, String desc, String itemParam) throws BizException {
         Long itemId = IdUtils.getItemId();
         item.setId(itemId);

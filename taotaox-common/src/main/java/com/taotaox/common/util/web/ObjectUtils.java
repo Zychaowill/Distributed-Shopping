@@ -3,6 +3,7 @@ package com.taotaox.common.util.web;
 import java.lang.reflect.Array;
 import java.util.Collection;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * Created by yachao on 18/1/20.
@@ -47,5 +48,9 @@ public class ObjectUtils {
             }
         }
         return false;
+    }
+    
+    public static <T> T value(T value, T defaultValue) {
+    	return Optional.ofNullable(value).orElse(defaultValue);
     }
 }
