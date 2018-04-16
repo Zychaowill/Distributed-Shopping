@@ -6,7 +6,7 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
     username: root
     password: root
-    url: jdbc:mysql://127.0.0.1:3306/taotao
+    url: jdbc:mysql://127.0.0.1:3306/taotao?characterEncoding=utf8
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.taotaox.manager.entity
