@@ -20,7 +20,8 @@ public class ItemParamItemServiceImpl implements ItemParamItemService {
     @Autowired
     private TbItemParamItemMapper itemParamItemMapper;
 
-    @Override
+    @SuppressWarnings("unchecked")
+	@Override
     public String getItemParamByItemId(Long itemId) {
         TbItemParamItemExample example = new TbItemParamItemExample();
         TbItemParamItemExample.Criteria criteria = example.createCriteria();
