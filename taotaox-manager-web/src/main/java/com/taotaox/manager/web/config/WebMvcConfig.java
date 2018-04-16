@@ -8,7 +8,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 /**
- * Created by yachao on 18121.
+ * Created by yachao on 18/1/21.
  */
 @Configuration
 @EnableWebMvc
