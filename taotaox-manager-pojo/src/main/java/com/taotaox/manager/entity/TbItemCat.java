@@ -13,7 +13,7 @@ public class TbItemCat {
 
     private Integer sortOrder;
 
-    private Boolean isParent;
+    private Boolean parent;
 
     private Date created;
 
@@ -59,15 +59,15 @@ public class TbItemCat {
         this.sortOrder = sortOrder;
     }
 
-    public Boolean getIsParent() {
-        return isParent;
-    }
+    public Boolean getParent() {
+		return parent;
+	}
 
-    public void setIsParent(Boolean isParent) {
-        this.isParent = isParent;
-    }
+	public void setParent(Boolean parent) {
+		this.parent = parent;
+	}
 
-    public Date getCreated() {
+	public Date getCreated() {
         return created;
     }
 

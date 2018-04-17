@@ -13,10 +13,10 @@ import lombok.Setter;
 public class CatNode implements Serializable {
 
 	private static final long serialVersionUID = 1349026004936623138L;
-	@JsonProperty("n")
-	private String name;
 	@JsonProperty("u")
 	private String url;
+	@JsonProperty("n")
+	private String name;
 	@JsonProperty("i")
 	private List<?> item;
 }

@@ -36,7 +36,7 @@ public class ItemCatServiceImpl implements ItemCatService {
                 EUTreeNode node = new EUTreeNode();
                 node.setId(category.getId());
                 node.setText(category.getName());
-                node.setState(category.getIsParent() ? "closed" : "open");
+                node.setState(category.getParent() ? "closed" : "open");
                 return node;
             }).collect(Collectors.toList());
         }

@@ -41,11 +41,11 @@
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<configuration>
-					<port>8085</port>
+					<port>8082</port>
 					<path>/</path>
-					<url>http://139.199.158.214:8102/manager/text</url>
+			<!-- 		<url>http://139.199.158.214:8102/manager/text</url>
 					<username>tf</username>
-					<password>admin1</password>
+					<password>admin1</password> -->
 				</configuration>
 			</plugin>
 		</plugins>
