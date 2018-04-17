@@ -1,4 +1,4 @@
-package com.taotaox.rest.publicapi;
+package com.taotaox.rest.controller.publicapi;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ import com.taotaox.manager.entity.TbContent;
 import com.taotaox.rest.service.ContentService;
 
 @RestController
-@RequestMapping("/content")
+@RequestMapping("/public/api/content")
 public class ContentApi {
 
 	@Autowired
