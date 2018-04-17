@@ -1,4 +1,4 @@
-package com.taotaox.common.util.web;
+package com.taotaox.common.util.web.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;

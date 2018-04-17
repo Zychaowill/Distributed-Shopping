@@ -45,6 +45,7 @@ public class SpringContextHelper {
 	 * @return SpringContextHelper
 	 */
 	public static SpringContextHelper started() {
+		log.info("wait initialized ApplicationContext.");
 		SpringContextProvider.assertApplicationContextInitialized();
 		return instance;
 	}
@@ -68,11 +69,11 @@ public class SpringContextHelper {
 		return doGetProperty(key, defaultValue);
 	}
 	
-	private String getPropertyOfSources(String key, String propertySourceName) {
+	public String getPropertyOfSources(String key, String propertySourceName) {
 		return (String) getPropertyOfSources(propertySourceName).getProperty(key);
 	}
 	
-	private String getPropertyOfSources(String key, String defaultValue, String propertySourceName) {
+	public String getPropertyOfSources(String key, String defaultValue, String propertySourceName) {
 		Assert.hasText(key, "key required");
 		String value = (String) getPropertyOfSources(propertySourceName).getProperty(key);
 		return value == null ? defaultValue : value;
@@ -151,5 +152,9 @@ public class SpringContextHelper {
 					&& Paths.get("/var/run/secrets/kubernetes.io/serviceaccount/ca.crt").toFile().exists();
 		}
 		return inKub.booleanValue();
+	}
+	
+	public static boolean notInKubernetes() {
+		return !inKubernetes();
 	}
 }

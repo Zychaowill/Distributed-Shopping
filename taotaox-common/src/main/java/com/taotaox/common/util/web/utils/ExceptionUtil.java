@@ -1,4 +1,4 @@
-package com.taotaox.common.util.web;
+package com.taotaox.common.util.web.utils;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

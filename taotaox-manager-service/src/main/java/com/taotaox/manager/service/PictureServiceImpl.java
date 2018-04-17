@@ -2,8 +2,8 @@ package com.taotaox.manager.service;
 
 import com.taotaox.common.exception.BizException;
 import com.taotaox.common.exception.ErrorMsg;
-import com.taotaox.common.util.web.FtpUtils;
-import com.taotaox.common.util.web.IdUtils;
+import com.taotaox.common.util.web.utils.FtpUtils;
+import com.taotaox.common.util.web.utils.IdUtils;
 
 import lombok.extern.slf4j.Slf4j;
 import org.joda.time.DateTime;

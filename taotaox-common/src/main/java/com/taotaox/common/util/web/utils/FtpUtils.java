@@ -1,4 +1,4 @@
-package com.taotaox.common.util.web;
+package com.taotaox.common.util.web.utils;
 
 import com.taotaox.common.exception.BizException;
 import org.apache.commons.net.ftp.FTP;

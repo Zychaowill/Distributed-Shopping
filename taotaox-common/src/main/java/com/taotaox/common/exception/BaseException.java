@@ -7,7 +7,7 @@ import java.util.Objects;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.http.HttpStatus;
 
-import com.taotaox.common.util.web.ObjectUtils;
+import com.taotaox.common.util.web.utils.ObjectUtils;
 
 import lombok.extern.slf4j.Slf4j;
 

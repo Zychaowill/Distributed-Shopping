@@ -9,6 +9,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.support.WebApplicationContextUtils;
 
+import com.taotaox.common.util.web.utils.WebUtil;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
