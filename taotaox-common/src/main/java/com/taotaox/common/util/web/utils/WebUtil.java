@@ -91,7 +91,7 @@ public class WebUtil {
 	
 	public static void removeCookies(HttpServletRequest request) {
 		Cookie[] cookies = request.getCookies();
-		if (ArrayUtils.nonEmpty(cookies)) {
+		if (ArrayUtil.nonEmpty(cookies)) {
 			for (int i = 0; i < cookies.length; i++) {
 				cookies[i].setMaxAge(0);
 			}

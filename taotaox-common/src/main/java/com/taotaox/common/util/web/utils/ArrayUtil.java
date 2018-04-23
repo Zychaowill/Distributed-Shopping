@@ -2,7 +2,7 @@ package com.taotaox.common.util.web.utils;
 
 import java.lang.reflect.Array;
 
-public class ArrayUtils {
+public class ArrayUtil {
 	
 	public static boolean isEmpty(Object[] array) {
 		return (array == null || (array != null && array.length == 0)) ? true : false;
