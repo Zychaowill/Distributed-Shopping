@@ -9,7 +9,6 @@ public enum ErrorMsg {
     FILE_UPLOAD_FAIL(100001, "Uploading files is not successful!"),
     FILE_UPLOAD_ERROR(100002, "Uploading files generates an error!");
 
-
     private Integer status;
     private String message;
 

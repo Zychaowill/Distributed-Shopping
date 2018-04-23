@@ -12,13 +12,13 @@ import com.taotaox.rest.bo.CatResult;
 import com.taotaox.rest.service.ItemCatService;
 
 @RestController
-@RequestMapping("/public/api")
+@RequestMapping("/public/api/itemcat")
 public class ItemCatApi {
 	
 	@Autowired
 	private ItemCatService itemCatService;
 	
-	@RequestMapping(value = "/itemcat/list", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/list", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public String getCategoryList(String callback) throws BizException {
 		CatResult categories = itemCatService.getCategoryList();
 		String jsonData = JsonUtils.beanToJson(categories);
