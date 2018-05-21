@@ -21,7 +21,7 @@ import java.util.List;
 @Api(value = "Taotaox Api")
 @RestController
 @RequestMapping("/public/api")
-public class ItemCatController {
+public class ItemCatApi {
 
     @Autowired
     private ItemCatService itemCatService;

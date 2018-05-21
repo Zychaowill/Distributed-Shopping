@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
 @Api(value = "Taotaox Api")
 @RestController
 @RequestMapping("/public/api")
-public class ItemParamController {
+public class ItemParamApi {
 
     private static final String BASE_PATH = "/item/param";
 

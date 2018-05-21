@@ -21,7 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Api(value = "Taotaox Api")
 @RestController
 @RequestMapping("/public/api")
-public class PictureController {
+public class PictureApi {
 
     @Autowired
     private PictureService pictureService;

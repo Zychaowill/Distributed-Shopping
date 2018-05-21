@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Created by yachao on 18/1/21.
  */
-@Api("Taotaox Api")
+@Api(value = "Taotaox Api")
 @Controller
 @RequestMapping("/public/api")
-public class ItemParamItemController {
+public class ItemParamItemApi {
 
     @Autowired
     private ItemParamItemService itemParamItemService;
