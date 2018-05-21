@@ -1,7 +1,11 @@
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\bo\EUTreeNode.java
+D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\rpc\RpcInvoker.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\FtpUtil.java
+D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\rpc\AbstractRequestUrl.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\bo\ExcelEntity.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\bo\JsonEntity.java
+D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\rpc\DefaultIssueRequest.java
+D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\rpc\DefaultPostRequestUrl.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\excel\ExcelTool.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\IdUtils.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\bo\EUDataGridResult.java
@@ -9,6 +13,7 @@ D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taot
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\ExceptionUtil.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\Encryptors.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\ObjectUtil.java
+D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\rpc\DefaultGetRequestUrl.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\exception\BizException.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\JsonUtils.java
 D:\jangz\git\projects\Distributed-Shopping\taotaox-common\src\main\java\com\taotaox\common\utils\web\ResponseHelper.java

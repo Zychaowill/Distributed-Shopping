@@ -1,2 +1,14 @@
+com\taotaox\manager\service\PictureServiceImpl.class
 com\taotaox\manager\service\ItemServiceImpl.class
+com\taotaox\manager\service\ItemParamItemServiceImpl.class
+com\taotaox\manager\service\ContentServiceImpl.class
+com\taotaox\manager\service\ItemParamService.class
+com\taotaox\manager\service\ContentCategoryServiceImpl.class
+com\taotaox\manager\service\ContentService.class
 com\taotaox\manager\service\ItemService.class
+com\taotaox\manager\service\ItemCatService.class
+com\taotaox\manager\service\ContentCategoryService.class
+com\taotaox\manager\service\ItemCatServiceImpl.class
+com\taotaox\manager\service\PictureService.class
+com\taotaox\manager\service\ItemParamItemService.class
+com\taotaox\manager\service\ItemParamServiceImpl.class

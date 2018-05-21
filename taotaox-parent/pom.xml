@@ -64,6 +64,11 @@
 				<artifactId>httpclient</artifactId>
 				<version>4.3.5</version>
 			</dependency>
+			<dependency>
+				<groupId>com.alibaba.boot</groupId>
+				<artifactId>dubbo-spring-boot-starter</artifactId>
+				<version>0.1.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
