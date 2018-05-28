@@ -7,7 +7,8 @@ public enum ErrorMsg {
     EVERYTHING_IS_OK(200, "Everything is OK!"),
     FILE_UPLOAD_SUCCESS(10000, "Uploading files is successful! URL is {}."),
     FILE_UPLOAD_FAIL(100001, "Uploading files is not successful!"),
-    FILE_UPLOAD_ERROR(100002, "Uploading files generates an error!");
+    FILE_UPLOAD_ERROR(100002, "Uploading files generates an error!"),
+    ERROR_USERNAME_OR_PASSWORD(100003, "Username or Password is error!");
 
 
     private Integer status;
