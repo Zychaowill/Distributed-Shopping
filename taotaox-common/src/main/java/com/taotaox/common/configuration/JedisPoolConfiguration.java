@@ -5,8 +5,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import lombok.extern.slf4j.Slf4j;
 import redis.clients.jedis.JedisPool;
 
+@Slf4j
 @Configuration
 public class JedisPoolConfiguration {
 
@@ -15,6 +17,7 @@ public class JedisPoolConfiguration {
 	
 	@Bean
 	public JedisPool jedisPool() {
+		log.info(">>>>>>>>>>>>>>>>Config JedisPool={}", jedisPoolProperties.toString());
 		JedisPool jedisPool = new JedisPool(jedisPoolConfig(), 
 				jedisPoolProperties.getHost(), 
 				jedisPoolProperties.getPort(), 

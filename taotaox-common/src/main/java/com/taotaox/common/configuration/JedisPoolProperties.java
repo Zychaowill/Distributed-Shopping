@@ -23,4 +23,10 @@ public class JedisPoolProperties {
 	
 	@Value("${redis.db.index}")
 	private int database;
+
+	@Override
+	public String toString() {
+		return "{\"host\":\"" + host + "\", \"port\":\"" + port + "\", \"timeout\":\"" + timeout + "\", \"password\":\""
+				+ password + "\", \"database\":\"" + database + "\"}";
+	}
 }
