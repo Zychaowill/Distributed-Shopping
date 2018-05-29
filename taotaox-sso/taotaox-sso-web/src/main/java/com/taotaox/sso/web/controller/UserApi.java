@@ -32,8 +32,12 @@ public class UserApi {
 	public JsonEntity<String> login(@RequestParam(value = "username") String username,
 			@RequestParam(value = "password") String password,
 			HttpServletRequest request, HttpServletResponse response) {
-		String token = userLoginService.login(username, password).getData();
-		CookieUtils.setCookie(request, response, key, token);
-		return ResponseHelper.of(token);
+		JsonEntity<String> jsonEntity = userLoginService.login(username, password);
+		if (jsonEntity.normal()) {
+			String token = jsonEntity.getData();
+			CookieUtils.setCookie(request, response, key, token);
+			return ResponseHelper.of(token);
+		}
+		return jsonEntity;
 	}
 }
