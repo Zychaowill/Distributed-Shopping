@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import redis.clients.jedis.JedisCluster;
 
-@Component
+//@Component
 public class JedisClusterClient implements JedisClient {
 
 	@Autowired

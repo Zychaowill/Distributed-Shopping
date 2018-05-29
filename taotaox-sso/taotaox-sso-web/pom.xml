@@ -6,8 +6,8 @@
 		<artifactId>taotaox-sso</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>taotaox-sso-service</artifactId>
-
+	<artifactId>taotaox-sso-web</artifactId>
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.taotaox</groupId>

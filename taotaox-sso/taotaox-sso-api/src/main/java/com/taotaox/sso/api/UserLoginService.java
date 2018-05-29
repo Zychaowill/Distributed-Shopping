@@ -4,5 +4,5 @@ import com.taotaox.common.bo.JsonEntity;
 
 public interface UserLoginService {
 	
-	JsonEntity<?> login(String username, String password);
+	JsonEntity<String> login(String username, String password);
 }

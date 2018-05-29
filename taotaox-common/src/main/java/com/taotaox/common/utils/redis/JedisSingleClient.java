@@ -1,11 +1,13 @@
 package com.taotaox.common.utils.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
+@Primary
 @Component
 public class JedisSingleClient implements JedisClient {
 
