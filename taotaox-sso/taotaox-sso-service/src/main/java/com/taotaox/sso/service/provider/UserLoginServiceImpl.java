@@ -44,7 +44,7 @@ public class UserLoginServiceImpl implements UserLoginService {
 		
 		List<TbUser> list = userMapper.selectByExample(example);
 		if (CollectionUtils.isEmpty(list)) {
-			ResponseHelper.withMessage(ErrorMsg.ERROR_USERNAME_OR_PASSWORD);
+			return ResponseHelper.withMessage(ErrorMsg.ERROR_USERNAME_OR_PASSWORD);
 		}
 		
 		String token = tokenWithoutPassword(list.get(0));
